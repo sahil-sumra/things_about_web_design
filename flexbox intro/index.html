@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Raleway";
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Raleway, sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: stretch;
+            align-content: space-around;
+        }
+
+        .box {
+            flex: 1;
+            color: #fff;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-flow: wrap;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            flex-grow: 2;
+        }
+
+        .box h2 {
+            color: #fff;
+            margin: auto;
+            font: 700 2vw/45px raleway;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .box p {
+            font: 100 14px/29px raleway;
+            color: #ecf0f1;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .box:first-of-type {
+            background: linear-gradient(to top,
+                    rgba(41, 128, 185, 1),
+                    rgba(41, 128, 185, 0.7)),
+                url("https://images.pexels.com/photos/1267348/pexels-photo-1267348.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat center;
+            background-size: cover;
+        }
+
+        .box:nth-of-type(2) {
+            background: linear-gradient(to top,
+                    rgba(127, 140, 141, 1),
+                    rgba(127, 140, 141, 0.7)),
+                url("https://images.pexels.com/photos/1011329/pexels-photo-1011329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
+            background-size: cover;
+        }
+
+        .box:nth-of-type(3) {
+            background: linear-gradient(to top,
+                    rgba(44, 62, 80, 1),
+                    rgba(44, 62, 80, 0.7)),
+                url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
+            background-size: cover;
+        }
+
+        .box:last-of-type {
+            background: linear-gradient(to top,
+                    rgba(39, 174, 96, 1),
+                    rgba(39, 174, 96, 0.7)),
+                url("https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 600px) {
+            h2 {
+                font-size: 30px !important;
+            }
+
+            p {
+                display: none;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .box {
+                display: flex;
+                width: 100%;
+                height: 25vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>service</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+
+        <div class="box">
+            <h2>Protfolio</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+
+        <div class="box">
+            <h2>Contact us</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+
+        <div class="box">
+            <h2>about</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+    </div>
+</body>
+
+</html>
